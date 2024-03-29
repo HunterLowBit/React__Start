@@ -1,17 +1,30 @@
 import logo from "./logo.png";
-import "./App.css";
+import "./App.css";import { Footer } from "./style";
+import { StyledNavbar } from "./style";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <StyledNavbar>
+          <ul>
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#">INFO</a>
+            </li>
+            <li>
+              <a href="https://github.com/HunterLowBit/React__Start">GITHUB</a>
+            </li>
+          </ul>
+        </StyledNavbar>
         <div className="header-logo-container">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
 
         <div className="header-content-container">
-          <h1>Seja bem-vindo!</h1>
-
           <div className="login-container">
             <h2>Entre com seu nome e senha:</h2>
             <div className="input-container">
@@ -28,6 +41,7 @@ function App() {
             </button>
           </div>
 
+         
           <div className="signup-container">
             <h2>Cadastre-se:</h2>
             <button onClick={() => alert("Você se cadastrou com sucesso!")}>
@@ -36,10 +50,9 @@ function App() {
           </div>
         </div>
       </header>
-
-      <footer className="App-footer">
+      <Footer>
         <h3>Copyright © 2024</h3>
-      </footer>
+      </Footer>
     </div>
   );
 }

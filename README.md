@@ -8,7 +8,7 @@
 ## Ações
 
 1. Inicializar REPO
-3. INIT REACT
+2. INIT REACT
 
 ```Terminal
 npx create-react-app inicio
@@ -28,3 +28,9 @@ npm start
 3. Comando `npm install -g serve` Tirado do site [https://create-react-app.dev/docs/deployment/](https://create-react-app.dev/docs/deployment/ "Site do REACT sobre DEPLOY")
 4. Comando `serve -s build`
 5. Copiar o IP disponivel no terminal caso não seja copiado automaticamente
+
+# Continuando o Código
+
+1. Baixando Styled Componentes `npm install styled-components --save`
+2. Criado arquivo "style.js" e acrescentando em "App.js" `import { Div, Title } from "./style";`
+3.
